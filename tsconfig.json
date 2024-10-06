@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext", // Specifies the output module format
+    "moduleResolution": "NodeNext", // Module resolution strategy
+    "target": "ES2023", // Specifies the target ECMAScript version
+    "outDir": "dist", // Directory for the compiled output
+    "esModuleInterop": true,
+    "strict": true /* Enable all strict type-checking options */,
+    "skipLibCheck": true /* Skip type checking for all .d.ts files */,
+    "baseUrl": ".", // Base directory for module resolution
+    "paths": {
+      "~/*": ["src/*"] // Alias path mapping for imports
+    }
+  },
+  "files": ["src/type.d.ts"], // Files used to define global types for the project
+  "include": ["src/**/*"] // Include all files in the "src" folder for compilation
+}
